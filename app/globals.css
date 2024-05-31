@@ -32,11 +32,14 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100%  ;
   transition: background-image 2s ease;
   opacity: var(--opacity);
   background-image: var(--background-image-url);
- 
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

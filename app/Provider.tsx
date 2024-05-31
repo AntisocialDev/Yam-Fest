@@ -17,7 +17,30 @@ export default function Provider({ children }: Readonly<{ children: React.ReactN
         bg4
     ];
 
+
+
     const [currentBgIndex, setCurrentBgIndex] = useState(0);
+    const [imagesLoaded, setImagesLoaded] = useState(false);
+
+    useEffect(() => {
+        const preloadImages = () => {
+            const imagePromises: Promise<void>[] = [];
+            bgImages.forEach((image) => {
+                const imagePromise = new Promise<void>((resolve, reject) => {
+                    const img = new Image();
+                    img.src = image.src;
+                    img.onload = () => resolve();
+                    img.onerror = (err: any) => reject(err);
+                });
+                imagePromises.push(imagePromise);
+            });
+            Promise.all(imagePromises)
+                .then(() => setImagesLoaded(true))
+                .catch((error) => console.error('Error preloading images:', error));
+        };
+
+        preloadImages();
+    }, []); // Empty dependency array ensures this effect runs only once
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -29,16 +52,12 @@ export default function Provider({ children }: Readonly<{ children: React.ReactN
 
     return (
         <body className="antialiased">
-        <div className="flex flex-col gap-20 justify-between">
-            <main>
-                {children}
-            </main>
-            <AppFooter />
-        </div>
-        {/* Preload images */}
-        {bgImages.map((bgImage, index) => (
-           <Image key={index} className='hidden' src={bgImage.src} alt='' width={100} height={100}></Image>
-        ))}
-    </body>
+            <div className="flex flex-col gap-20 justify-between">
+                <main>
+                    {children}
+                </main>
+                <AppFooter />
+            </div>
+        </body>
     );
 }
