@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import raisinghand from '../public/images/girl-raising-hands.png';
 import drumsTrumpet from '../public/images/drums-and-trumpet.png';
-import largeWhiteLogo from '../public/images/drums-and-trumpet.png';
+import largeWhiteLogo from '../public/images/logo.svg';
 import bgExperience from '../public/images/bg-experience.png';
 import purpleVector from '../public/images/purple-vector.png';
 import yellowVector from '../public/images/yellow-vector.png';
