@@ -41,7 +41,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   transition: background-image 2s ease;
   opacity: var(--opacity);
   background-image: var(--background-image-url);
