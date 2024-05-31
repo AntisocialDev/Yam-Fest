@@ -28,13 +28,6 @@ export default function Provider({ children }: Readonly<{ children: React.ReactN
     }, [currentBgIndex]);
 
     return (
-        <body className="antialiased">
-            <div className="flex flex-col gap-20 justify-between">
-                <main>
-                    {children}
-                </main>
-                <AppFooter />
-            </div>
-        </body>
+        <>{children}</>
     );
 }

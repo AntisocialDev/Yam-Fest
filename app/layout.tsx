@@ -20,11 +20,18 @@ export default function RootLayout({
     '../public/images/bg3.svg',
     '../public/images/bg4.svg',
   ];
-  
+
 
   return (
     <html lang="en">
-      <Provider>{children}</Provider>
+      <body className="antialiased">
+        <div className="flex flex-col gap-20 justify-between">
+          <main>
+            <Provider>{children}</Provider>
+          </main>
+          <AppFooter />
+        </div>
+      </body>
     </html>
   );
 }

@@ -96,9 +96,9 @@ export default function Home() {
       <section className="h-[300px] md:h-[600px] relative">
         <Image priority className="absolute w-[200px] md:w-[380px] right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
       </section>
-      <section className="flex font-bold flex-col text-center p-10 md:p-20 lg:p-60 items-center justify-center celeb-div h-[500px] sm:h-[700px] relative">
+      <section className="flex font-bold flex-col text-center py-[50px] sm:py-[50px] px-5 lg:p-40 items-center justify-center celeb-div h-[500px] sm:h-[700px] relative">
         <Image priority className="absolute w-full h-full z-10 left-0 top-0" src={bgExperience} alt="" width={1000} height={100}></Image>
-        <div className="z-[9999]">
+        <div className="z-[9999] flex flex-col items-center justify-center h-full">
           <p className="text-4xl md:text-5xl lg:text-6xl">The Experience</p>
           <p className="text-xl md:text-2xl lg:text-3xl mt-10">New Yam Music Festival is a celebration of culture, music, and community. Rooted in tradition, our festival showcases the talents of indigenous artists while promoting cultural appreciation and understanding.
             Join us as we come together to honour our heritage, embrace diversity, and unite through the power of music.</p>
@@ -141,9 +141,9 @@ export default function Home() {
           </div>
         </div>
         <Image priority className="hidden sm:block absolute z-10 right-[150px] top-[120px]" src={purpleVector} alt="" width={60} height={50}></Image>
-
       </section>
-      <section className="text-black font-bold relative w-[90%] sm:w-[70%] m-auto lg:mt-[150px]   py-20 p-10 md:p-[90px] xl:px-[200px]  bg-[#FFD000] rounded-[24px] border-solid border-[#000000] border-[6px]">
+
+      <section className="text-black font-bold relative w-[90%] sm:w-[70%] m-auto lg:mt-[150px] py-20 p-10 md:p-[90px] xl:px-[200px] bg-[#FFD000] rounded-[24px] border-solid border-[#000000] border-[6px]">
         <Image priority className="absolute z-10 w-full min-h-[500px] bottom-5 left-0" src={yellowVector} alt="" width={1000} height={100}></Image>
         <form className="w-full z-20 relative flex flex-col items-center text-center justify-center gap-10">
           <div className="flex flex-col gap-2 items-center">
@@ -177,13 +177,13 @@ export default function Home() {
       <section className="relative flex flex-col min-[760px]:flex-row w-[70%] items-center m-auto mt-[150px] justify-between gap-10">
         <Image priority className="absolute left-[-20px] scale-[1.1] top-[-15px]" src={imgVectors} alt="" width={1000} height={100}></Image>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image priority layout="responsive" className="w-full" src={img1} alt="" width={100} height={100}></Image>
+          <Image priority className="w-full" src={img1} alt="" width={100} height={100}></Image>
         </div>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image priority layout="responsive" className="w-full" src={img2} alt="" width={100} height={100}></Image>
+          <Image priority className="w-full" src={img2} alt="" width={100} height={100}></Image>
         </div>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image priority layout="responsive" className="w-full" src={img3} alt="" width={100} height={100}></Image>
+          <Image priority className="w-full" src={img3} alt="" width={100} height={100}></Image>
         </div>
       </section>
     </>
