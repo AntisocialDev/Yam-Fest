@@ -37,7 +37,7 @@ export default function Provider({ children }: Readonly<{ children: React.ReactN
         </div>
         {/* Preload images */}
         {bgImages.map((bgImage, index) => (
-           <Image className='hidden' src={bgImage.src} alt='' width={100} height={100}></Image>
+           <Image key={index} className='hidden' src={bgImage.src} alt='' width={100} height={100}></Image>
         ))}
     </body>
     );
