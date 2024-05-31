@@ -31,7 +31,7 @@ body {
   position: relative;
   min-height: 100vh;
   font-size: 16px;
-  color: transparent;
+  color: #ffffff;
   font-family: 'Magical-Night', sans-serif;
 }
 
@@ -41,7 +41,7 @@ body::before {
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
   transition: background-image 2s ease;
   opacity: var(--opacity);
   background-image: var(--background-image-url);
