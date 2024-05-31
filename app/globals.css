@@ -78,7 +78,7 @@ body::before {
 }
 
 .celeb-div {
-  background-image: url('../public/images/celebration.svg');
+  background-image: url('../public/images/bg-experience.png');
   background-position: center;
   background-size: 100%;
 }
