@@ -9,9 +9,7 @@
   font-style: normal;
 }
 
-:root {
-  --background-image-url: url('/images/home-bg1.svg');
-}
+
 
 html,
 body {

@@ -4,10 +4,10 @@ import { useEffect, useState } from 'react';
 import AppFooter from "@/components/AppFooter";
 
 const bgImages: string[] = [
+    '/images/home-bg1.svg',
     '/images/bg2.svg',
     '/images/bg3.svg',
     '/images/bg4.svg',
-    '/images/home-bg1.svg',
 ];
 
 export default function Provider({ children }: Readonly<{ children: React.ReactNode }>) {
