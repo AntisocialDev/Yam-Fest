@@ -84,8 +84,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative text-black bg-[#0FCEEE] h-[700px]  text-center text-4xl font-bold">
-        <Image priority className="absolute left-0 top-0 w-full h-full z-10" src={drumsTrumpet} alt="" width={10000} height={100}></Image>
+      <section className="relative text-black bg-[#0FCEEE] h-[500px] sm:h-[700px]  text-center text-3xl sm:text-4xl font-bold">
+        <Image priority className="absolute left-0 top-0 h-[80%] sm:h-full w-full z-10" src={drumsTrumpet} alt="" width={1000} height={100}></Image>
         <div className="flex z-20 relative h-full flex-col justify-center items-center gap-[70px]">
           <p>Experience Authenticity</p>
           <p>Embrace Culture</p>
@@ -96,7 +96,7 @@ export default function Home() {
       <section className="h-[300px] md:h-[600px] relative">
         <Image priority className="absolute w-[200px] md:w-[380px] right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
       </section>
-      <section className="flex font-bold flex-col text-center p-5 md:p-20 lg:p-60 items-center justify-center celeb-div h-[700px] relative">
+      <section className="flex font-bold flex-col text-center p-10 md:p-20 lg:p-60 items-center justify-center celeb-div h-[500px] sm:h-[700px] relative">
         <Image priority className="absolute w-full h-full z-10 left-0 top-0" src={bgExperience} alt="" width={1000} height={100}></Image>
         <div className="z-[9999]">
           <p className="text-4xl md:text-5xl lg:text-6xl">The Experience</p>
