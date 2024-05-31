@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Magical-Night';
+  src: url('../public/fonts/magical-night.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --background-image-url: url('/images/home-bg1.svg');
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: 'Magical-Night', sans-serif;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: background-image 2s ease;
+  opacity: var(--opacity);
+  background-image: var(--background-image-url);
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-footer {
+  padding: 80px 50px;
+  background-color: #000000b2;
+  width: 100%;
+  height: 500px;
+}
+
+.banner-div {
+  background-image: url('../public/images/crowd.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  padding: 30px 50px;
+  z-index: 2;
+}
+
+.banner-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(115, 94, 0, 0.5);
+  z-index: 1;
+}
+
+.celeb-div {
+  background-image: url('../public/images/celebration.svg');
+  background-position: center;
+  background-size: 100%;
+}
+
+.purple-div {
+  position: relative;
+  z-index: 9999;
+  margin-top: -120px;
+  background-image: url('../public/images/Purple-shape.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+#float-label {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  position: relative;
+}
+
+#float-label input {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  padding: 30px 16px 0 0;
+  color: #000000;
+  border-bottom: 3px solid #000000;
+}
+
+#float-label input:-webkit-autofill {
+  border-bottom: 3px solid #000000;
+  background-color: red !important;
+  background-image: none !important;
+}
+
+#float-label label {
+  position: absolute;
+  transform: translate(0, 26px) scale(1);
+  transform-origin: top left;
+  transition: all 0.2s ease-out;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  color: #000000;
+  pointer-events: none;
+}
+
+#float-label:focus-within label {
+  transform: translate(0, 12px) scale(0.75);
+}
+
+#float-label .Active {
+  transform: translate(0, 12px) scale(0.75);
+}
+
+form button {
+  transition: color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+form button:hover {
+  background-color: #ffffff;
+  color: #262626;
+}
+
+.header-btn {
+  transition: color 0.3s ease-in;
+  transition: background-color 0.3s ease-in;
+}
+
+.header-btn:hover {
+  background-color: #262626;
+  color: #ffffff;
+}
