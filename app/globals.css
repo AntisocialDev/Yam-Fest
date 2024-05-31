@@ -18,6 +18,11 @@ body {
   padding: 0;
 }
 
+body::after{
+  display: none;
+  content: url('../public/images/bg1.png') url('../public/images/bg2.png') url('../public/images/bg3.png') url('../public/images/bg4.png');
+}
+
 body {
   position: relative;
   min-height: 100vh;
