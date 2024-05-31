@@ -77,11 +77,6 @@ body::before {
   z-index: 1;
 }
 
-.celeb-div {
-  background-image: url('../public/images/bg-experience.png');
-  background-position: center;
-  background-size: 100%;
-}
 
 .purple-div {
   position: relative;

@@ -93,6 +93,7 @@ export default function Home() {
       </section>
       <section className="flex font-bold flex-col gap-10 items-center justify-center p-60 purple-div h-[700px]">
         <Image className="absolute z-10 left-[900px] top-[30px]" src='/images/purple-vector.png' alt="" width={60} height={50}></Image>
+        <Image className="absolute z-10 left-0 top-0" src='/images/bg-experience.png' alt="" width={60} height={50}></Image>
 
         <p className="text-5xl">Countdown To Showtime</p>
         <div className="flex gap-5">
