@@ -81,19 +81,19 @@ export default function Home() {
         <p>Feel the Rhythm</p>
         <p>Own Your Heritage</p>
       </section>
-      <section className="h-[700px] relative">
-        <Image className="absolute right-0 bottom-0 z-10" src={raisinghand} alt="" width={400} height={100}></Image>
+      <section className="h-[600px] relative">
+        <Image className="absolute right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
       </section>
       <section className="flex font-bold flex-col text-center p-60 items-center justify-center celeb-div h-[700px] relative">
-        <Image className="absolute z-10 left-[50px] top-[-15px]" src='/images/exp-vector.png' alt="" width={60} height={50}></Image>
-        <div>
+        <Image className="absolute w-full z-10 left-0 top-0" src='/images/bg-experience.png' alt="" width={1000} height={100}></Image>
+        <div className="z-[9999]">
           <p className="text-6xl">The Experience</p>
           <p className="text-3xl mt-10">New Yam Music Festival is a celebration of culture, music, and community. Rooted in tradition, our festival showcases the talents of indigenous artists while promoting cultural appreciation and understanding.
             Join us as we come together to honour our heritage, embrace diversity, and unite through the power of music.</p>
         </div>
       </section>
-      <section className="flex relative font-bold flex-col gap-10 items-center justify-center p-60 purple-div h-[700px]">
-        <Image className="absolute w-full z-10 left-0 top-0" src='/images/bg-experience.png' alt="" width={1000} height={100}></Image>
+      <section className="flex font-bold flex-col gap-10 items-center justify-center p-60 purple-div h-[700px]">
+        <Image className="absolute z-10 left-[900px] top-[30px]" src='/images/purple-vector.png' alt="" width={60} height={50}></Image>
         <p className="text-5xl">Countdown To Showtime</p>
         <div className="flex gap-5">
           <div className="flex font-extrabold items-start gap-5">
