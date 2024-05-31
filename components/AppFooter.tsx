@@ -12,7 +12,7 @@ export default function AppFooter() {
         <footer className="app-footer">
             <div className="flex flex-col py-[80px] px-5  sm:px-[50px] h-full gap-20 justify-between">
                 <div className="flex flex-col items-center sm:flex-row gap-20 justify-between">
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col items-center gap-2">
                         <Image priority src={whiteLogo} alt="" width={200} height={100}></Image>
                         <div>
                             <p className="font-bold">14th & 15th September, 2024</p>
