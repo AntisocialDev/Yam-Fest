@@ -77,7 +77,7 @@ export default function Home() {
           <AppHeader />
         </div>
         <div className="flex flex-col p-5 gap-5 items-center z-10">
-          <Image src={largeWhiteLogo} alt="white-logo" width={600} height={100} />
+          <Image priority src={largeWhiteLogo} alt="white-logo" width={600} height={100} />
           <div>
             <p className="text-xl font-bold">14th & 15th September, 2024</p>
             <p className="text-xl font-bold">Amadeo Event Centre, Enugu.</p>
@@ -85,7 +85,7 @@ export default function Home() {
         </div>
       </section>
       <section className="relative text-black bg-[#0FCEEE] h-[700px]  text-center text-4xl font-bold">
-        <Image className="absolute left-0 top-0 w-full h-full z-10" src={drumsTrumpet} alt="" width={10000} height={100}></Image>
+        <Image priority className="absolute left-0 top-0 w-full h-full z-10" src={drumsTrumpet} alt="" width={10000} height={100}></Image>
         <div className="flex z-20 relative h-full flex-col justify-center items-center gap-[70px]">
           <p>Experience Authenticity</p>
           <p>Embrace Culture</p>
@@ -94,10 +94,10 @@ export default function Home() {
         </div>
       </section>
       <section className="h-[300px] md:h-[600px] relative">
-        <Image className="absolute w-[200px] md:w-[380px] right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
+        <Image priority className="absolute w-[200px] md:w-[380px] right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
       </section>
       <section className="flex font-bold flex-col text-center p-5 md:p-20 lg:p-60 items-center justify-center celeb-div h-[700px] relative">
-        <Image className="absolute w-full h-full z-10 left-0 top-0" src={bgExperience} alt="" width={1000} height={100}></Image>
+        <Image priority className="absolute w-full h-full z-10 left-0 top-0" src={bgExperience} alt="" width={1000} height={100}></Image>
         <div className="z-[9999]">
           <p className="text-4xl md:text-5xl lg:text-6xl">The Experience</p>
           <p className="text-xl md:text-2xl lg:text-3xl mt-10">New Yam Music Festival is a celebration of culture, music, and community. Rooted in tradition, our festival showcases the talents of indigenous artists while promoting cultural appreciation and understanding.
@@ -106,7 +106,7 @@ export default function Home() {
       </section>
       <section className="purple-div h-[700px] mt-[-300px] lg:mt-[-150px]">
         <div className="relative flex w-full h-full font-bold  items-center justify-center">
-          <Image className="absolute w-full h-full left-0 top-0 " src={purpleShape} alt="" width={100} height={100}></Image>
+          <Image priority className="absolute w-full h-full left-0 top-0 " src={purpleShape} alt="" width={100} height={100}></Image>
           <div className="relative py-20 flex flex-col items-center text-center gap-5 z-30">
             <p className="text-xl sm:text-3xl md:text-4xl lg:text-5xl">Countdown To Showtime</p>
             <div className="flex gap-5">
@@ -140,11 +140,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Image className="hidden sm:block absolute z-10 right-[150px] top-[120px]" src={purpleVector} alt="" width={60} height={50}></Image>
+        <Image priority className="hidden sm:block absolute z-10 right-[150px] top-[120px]" src={purpleVector} alt="" width={60} height={50}></Image>
 
       </section>
       <section className="text-black font-bold relative w-[90%] sm:w-[70%] m-auto lg:mt-[150px]   py-20 p-10 md:p-[90px] xl:px-[200px]  bg-[#FFD000] rounded-[24px] border-solid border-[#000000] border-[6px]">
-        <Image className="absolute z-10 w-full min-h-[500px] bottom-5 left-0" src={yellowVector} alt="" width={1000} height={100}></Image>
+        <Image priority className="absolute z-10 w-full min-h-[500px] bottom-5 left-0" src={yellowVector} alt="" width={1000} height={100}></Image>
         <form className="w-full z-20 relative flex flex-col items-center text-center justify-center gap-10">
           <div className="flex flex-col gap-2 items-center">
             <h2 className="text-4xl">Don't Miss a Thing!</h2>
@@ -175,15 +175,15 @@ export default function Home() {
         </form>
       </section>
       <section className="relative flex flex-col min-[760px]:flex-row w-[70%] items-center m-auto mt-[150px] justify-between gap-10">
-        <Image className="absolute left-[-20px] scale-[1.1] top-[-15px]" src={imgVectors} alt="" width={1000} height={100}></Image>
+        <Image priority className="absolute left-[-20px] scale-[1.1] top-[-15px]" src={imgVectors} alt="" width={1000} height={100}></Image>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image layout="responsive" className="w-full" src={img1} alt="" width={100} height={100}></Image>
+          <Image priority layout="responsive" className="w-full" src={img1} alt="" width={100} height={100}></Image>
         </div>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image layout="responsive" className="w-full" src={img2} alt="" width={100} height={100}></Image>
+          <Image priority layout="responsive" className="w-full" src={img2} alt="" width={100} height={100}></Image>
         </div>
         <div className="min-w-[150px] max-w-[350px] h-auto">
-          <Image layout="responsive" className="w-full" src={img3} alt="" width={100} height={100}></Image>
+          <Image priority layout="responsive" className="w-full" src={img3} alt="" width={100} height={100}></Image>
         </div>
       </section>
     </>
