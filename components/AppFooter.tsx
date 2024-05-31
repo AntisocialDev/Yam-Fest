@@ -10,8 +10,8 @@ import whiteLogo from '../public/images/logo-white.svg';
 export default function AppFooter() {
     return (
         <footer className="app-footer">
-            <div className="flex flex-col h-full justify-between">
-                <div className="flex justify-between">
+            <div className="flex flex-col py-[80px] px-5  sm:px-[50px] h-full gap-20 justify-between">
+                <div className="flex flex-col items-center sm:flex-row gap-20 justify-between">
                     <div className="flex flex-col gap-2">
                         <Image src={whiteLogo} alt="" width={200} height={100}></Image>
                         <div>
@@ -19,7 +19,7 @@ export default function AppFooter() {
                             <p className="font-bold">Amadeo Event Centre, Enugu.</p>
                         </div>
                     </div>
-                    <div className="flex flex-col items-end gap-5">
+                    <div className="flex flex-col items-center sm:items-end gap-5">
                         <div className="flex gap-3">
                             <Image src={instagram} alt="" width={40} height={40}></Image>
                             <Image src={facebook} alt="" width={40} height={40}></Image>
@@ -39,7 +39,7 @@ export default function AppFooter() {
 
                 <div className="flex flex-col gap-10">
                     <hr className="w-full bg-white h-[2px]"></hr>
-                    <div className="flex justify-between items-center">
+                    <div className="flex flex-col sm:flex-row gap-5 justify-between items-center">
                         <div className="flex gap-5">
                             <p className="text-sm">Privacy Policy</p>
                             <p className="text-sm">Terms of Service</p>
