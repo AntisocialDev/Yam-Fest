@@ -1,4 +1,11 @@
-import Image from "next/image"
+import Image from "next/image";
+import phone from '../public/images/Phone.svg';
+import email from '../public/images/mail.svg';
+import instagram from '../public/images/instagram.svg';
+import facebook from '../public/images/facebook.svg';
+import x from '../public/images/x.svg';
+import whiteLogo from '../public/images/logo-white.svg';
+
 
 export default function AppFooter() {
     return (
@@ -6,7 +13,7 @@ export default function AppFooter() {
             <div className="flex flex-col h-full justify-between">
                 <div className="flex justify-between">
                     <div className="flex flex-col gap-2">
-                        <Image src='/images/logo-white.svg' alt="" width={200} height={100}></Image>
+                        <Image src={whiteLogo} alt="" width={200} height={100}></Image>
                         <div>
                             <p className="font-bold">14th & 15th September, 2024</p>
                             <p className="font-bold">Amadeo Event Centre, Enugu.</p>
@@ -14,17 +21,17 @@ export default function AppFooter() {
                     </div>
                     <div className="flex flex-col items-end gap-5">
                         <div className="flex gap-3">
-                            <Image src='/images/instagram.svg' alt="" width={40} height={40}></Image>
-                            <Image src='/images/facebook.svg' alt="" width={40} height={40}></Image>
-                            <Image src='/images/x.svg' alt="" width={40} height={40}></Image>
+                            <Image src={instagram} alt="" width={40} height={40}></Image>
+                            <Image src={facebook} alt="" width={40} height={40}></Image>
+                            <Image src={x} alt="" width={40} height={40}></Image>
                         </div>
                         <div className="flex items-center gap-3">
-                            <Image src='/images/phone.svg' alt="" width={24} height={24}></Image>
+                            <Image src={phone} alt="" width={24} height={24}></Image>
                             <p className="text-sm">3438881818</p>
                             <p className="text-sm">2771119244</p>
                         </div>
                         <div className="flex items-center gap-3">
-                        <Image src='/images/mail.svg' alt="" width={24} height={24}></Image>
+                        <Image src={email} alt="" width={24} height={24}></Image>
                             <p className="text-sm">contact@newyammusicfestival.com</p>
                         </div>
                     </div>

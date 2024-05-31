@@ -2,7 +2,16 @@
 import AppHeader from "@/components/AppHeader";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import raisinghand from '../public/images/girl-raising-hands.png'
+import raisinghand from '../public/images/girl-raising-hands.png';
+import drumsTrumpet from '../public/images/drums-and-trumpet.png';
+import largeWhiteLogo from '../public/images/drums-and-trumpet.png';
+import bgExperience from '../public/images/bg-experience.png';
+import purpleVector from '../public/images/purple-vector.png';
+import yellowVector from '../public/images/yellow-vector.png';
+import imgVectors from '../public/images/img-vectors.png';
+import img1 from '../public/images/img1.svg';
+import img2 from '../public/images/img2.svg';
+import img3 from '../public/images/img3.svg';
 
 interface TimeLeft {
   days: number;
@@ -67,7 +76,7 @@ export default function Home() {
           <AppHeader />
         </div>
         <div className="flex flex-col gap-5 items-center z-10">
-          <Image src='/images/logo.svg' alt="white-logo" width={600} height={100} />
+          <Image src={largeWhiteLogo} alt="white-logo" width={600} height={100} />
           <div>
             <p className="text-xl font-bold">14th & 15th September, 2024</p>
             <p className="text-xl font-bold">Amadeo Event Centre, Enugu.</p>
@@ -75,7 +84,7 @@ export default function Home() {
         </div>
       </section>
       <section className="relative text-black bg-[#0FCEEE] h-[700px] flex flex-col justify-center items-center gap-[70px] text-center text-4xl font-bold">
-        <Image className="absolute left-0 top-0 w-full h-full z-10" src='/images/drums-and-trumpet.png' alt="" width={10000} height={100}></Image>
+        <Image className="absolute left-0 top-0 w-full h-full z-10" src={drumsTrumpet} alt="" width={10000} height={100}></Image>
         <p>Experience Authenticity</p>
         <p>Embrace Culture</p>
         <p>Feel the Rhythm</p>
@@ -85,7 +94,7 @@ export default function Home() {
         <Image className="absolute right-0 bottom-[-50px] z-10" src={raisinghand} alt="" width={400} height={100}></Image>
       </section>
       <section className="flex font-bold flex-col text-center p-60 items-center justify-center celeb-div h-[700px] relative">
-        <Image className="absolute w-full z-10 left-0 top-0" src='/images/bg-experience.png' alt="" width={1000} height={100}></Image>
+        <Image className="absolute w-full z-10 left-0 top-0" src={bgExperience} alt="" width={1000} height={100}></Image>
         <div className="z-[9999]">
           <p className="text-6xl">The Experience</p>
           <p className="text-3xl mt-10">New Yam Music Festival is a celebration of culture, music, and community. Rooted in tradition, our festival showcases the talents of indigenous artists while promoting cultural appreciation and understanding.
@@ -93,7 +102,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex font-bold flex-col gap-10 items-center justify-center p-60 purple-div h-[700px]">
-        <Image className="absolute z-10 left-[900px] top-[30px]" src='/images/purple-vector.png' alt="" width={60} height={50}></Image>
+        <Image className="absolute z-10 left-[900px] top-[30px]" src={purpleVector} alt="" width={60} height={50}></Image>
         <p className="text-5xl">Countdown To Showtime</p>
         <div className="flex gap-5">
           <div className="flex font-extrabold items-start gap-5">
@@ -126,7 +135,7 @@ export default function Home() {
         </div>
       </section>
       <section className="text-black font-bold relative w-[70%] m-auto mt-[150px]  py-20 px-60  bg-[#FFD000] rounded-[24px] border-solid border-[#000000] border-[6px]">
-        <Image className="absolute z-10 w-full bottom-5 left-0" src='/images/yellow-vector.png' alt="" width={1000} height={100}></Image>
+        <Image className="absolute z-10 w-full bottom-5 left-0" src={yellowVector} alt="" width={1000} height={100}></Image>
         <form className="z-20 relative flex flex-col  text-center justify-center gap-10">
           <div className="flex flex-col gap-2 items-center">
             <h2 className="text-4xl">Don't Miss a Thing!</h2>
@@ -157,10 +166,10 @@ export default function Home() {
         </form>
       </section>
       <section className="relative flex w-[70%] m-auto mt-[150px] justify-between gap-10">
-        <Image className="absolute left-[-20px] scale-[1.1] top-[-15px]" src='/images/img-vectors.png' alt="" width={1000} height={100}></Image>
-        <Image className="w-[320px] h-[320px]" src='/images/img1.svg' alt="" width={100} height={100}></Image>
-        <Image className="w-[320px] h-[320px]" src='/images/img2.svg' alt="" width={100} height={100}></Image>
-        <Image className="w-[320px] h-[320px]" src='/images/img3.svg' alt="" width={100} height={100}></Image>
+        <Image className="absolute left-[-20px] scale-[1.1] top-[-15px]" src={imgVectors} alt="" width={1000} height={100}></Image>
+        <Image className="w-[320px] h-[320px]" src={img1} alt="" width={100} height={100}></Image>
+        <Image className="w-[320px] h-[320px]" src={img2} alt="" width={100} height={100}></Image>
+        <Image className="w-[320px] h-[320px]" src={img3} alt="" width={100} height={100}></Image>
       </section>
     </>
   );
