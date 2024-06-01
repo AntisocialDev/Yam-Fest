@@ -6,9 +6,6 @@ import Provider from "./Provider";
 export const metadata: Metadata = {
   title: "New Yam Music Festival",
   description: "Experience the best music festival in Nigeria",
-  icons: {
-    icon: '/app-logo.png'
-  }
 };
 
 export default function RootLayout({
