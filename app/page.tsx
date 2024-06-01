@@ -275,7 +275,7 @@ export default function Home() {
           width={1000}
           height={100}
         ></Image>
-        <div className="min-w-[150px] w-[350px] h-auto">
+        <div className="min-w-[150px] w-[250px] sm:w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
@@ -285,7 +285,7 @@ export default function Home() {
             height={100}
           ></Image>
         </div>
-        <div className="min-w-[150px] w-[350px] h-auto">
+        <div className="min-w-[150px] w-[250px] sm:w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
@@ -295,7 +295,7 @@ export default function Home() {
             height={100}
           ></Image>
         </div>
-        <div className="min-w-[150px] w-[350px] h-auto">
+        <div className="min-w-[150px] w-[250px] sm:w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
