@@ -9,9 +9,9 @@ import bgExperience from "../public/images/bg-experience.png";
 import purpleVector from "../public/images/purple-vector.png";
 import yellowVector from "../public/images/yellow-vector.png";
 import imgVectors from "../public/images/img-vectors.png";
-import img1 from "../public/images/img1.svg";
-import img2 from "../public/images/img2.svg";
-import img3 from "../public/images/img3.svg";
+import img1 from "../public/images/gallery-1.png";
+import img2 from "../public/images/gallery-2.png";
+import img3 from "../public/images/gallery-3.png";
 import purpleShape from "../public/images/Purple-shape.svg";
 
 interface TimeLeft {
@@ -269,39 +269,39 @@ export default function Home() {
       <section className="relative flex flex-col min-[760px]:flex-row w-[70%] items-center m-auto mt-[150px] justify-between gap-10">
         <Image
           loading="lazy"
-          className="absolute left-[-20px] scale-[1.1] top-[-15px]"
+          className="hidden min-[760px]:block absolute left-[-20px] scale-[1.1] top-[-15px]"
           src={imgVectors}
           alt="bg image vectors"
           width={1000}
           height={100}
         ></Image>
-        <div className="min-w-[150px] max-w-[350px] h-auto">
+        <div className="min-w-[150px] w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
             src={img1}
             alt="image 1"
-            width={100}
+            width={1000}
             height={100}
           ></Image>
         </div>
-        <div className="min-w-[150px] max-w-[350px] h-auto">
+        <div className="min-w-[150px] w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
             src={img2}
             alt="image 2"
-            width={100}
+            width={1000}
             height={100}
           ></Image>
         </div>
-        <div className="min-w-[150px] max-w-[350px] h-auto">
+        <div className="min-w-[150px] w-[350px] h-auto">
           <Image
             loading="lazy"
             className="w-full"
             src={img3}
             alt="image 3"
-            width={100}
+            width={1000}
             height={100}
           ></Image>
         </div>
