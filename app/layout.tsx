@@ -16,7 +16,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-
       <body className="antialiased">
         <div className="flex flex-col gap-20 justify-between">
           <main>
